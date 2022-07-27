@@ -91,8 +91,18 @@ public class AthleticRaceInterface extends javax.swing.JFrame implements Messeng
         });
 
         btn_restart.setText("Reiniciar");
+        btn_restart.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_restartActionPerformed(evt);
+            }
+        });
 
         btn_finish.setText("Terminar");
+        btn_finish.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_finishActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -190,6 +200,14 @@ public class AthleticRaceInterface extends javax.swing.JFrame implements Messeng
             JOptionPane.showMessageDialog(null, "No se han registrado los 5 corredores");
         }
     }//GEN-LAST:event_btn_startActionPerformed
+
+    private void btn_finishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_finishActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btn_finishActionPerformed
+
+    private void btn_restartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_restartActionPerformed
+        this.runners.clear();
+    }//GEN-LAST:event_btn_restartActionPerformed
 
     /**
      * @param args the command line arguments

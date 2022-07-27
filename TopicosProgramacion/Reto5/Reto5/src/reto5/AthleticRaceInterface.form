@@ -156,11 +156,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Reiniciar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_restartActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_finish">
       <Properties>
         <Property name="text" type="java.lang.String" value="Terminar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_finishActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
