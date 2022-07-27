@@ -393,7 +393,7 @@ public class Calculadora extends javax.swing.JFrame {
         this.num1 = Float.valueOf(0);
         this.num2 = Float.valueOf(0);
         txtScreen.setText("");
-        this.activarOperadores();
+        this.desactivaOperadores();
     }//GEN-LAST:event_btn_clearActionPerformed
 
     private void btn_igualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_igualActionPerformed
